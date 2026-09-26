@@ -1,0 +1,212 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #fff;
+  font-size: 16px;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; }
+
+img { display: block; max-width: 100%; height: auto; }
+
+p { line-height: 1.35; margin: 0 0 18px; }
+
+figure { margin: 0; }
+
+a { color: #25527d; }
+
+a:hover { color: #153452; }
+
+.page-shell {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero {
+  background: #f3f4f6;
+  text-align: center;
+  padding: 22px 28px 25px;
+}
+
+.hero h1 {
+  font-size: clamp(25px, 3.6vw, 32px);
+  line-height: 1.16;
+  margin: 0 auto 20px;
+  max-width: 840px;
+  font-weight: 700;
+}
+
+.authors {
+  max-width: 760px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3px 16px;
+  margin: 0 auto 10px;
+  color: #22527c;
+  line-height: 1.55;
+}
+
+sup { font-size: 0.69em; vertical-align: super; }
+
+.affiliations { font-size: 15px; line-height: 1.35; }
+
+.affiliations p { margin: 0 0 3px; }
+
+.affiliations a { text-decoration: none; }
+
+.venue {
+  margin: 17px 0 0;
+  font-style: italic;
+}
+
+.link-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 30px 16px 23px;
+}
+
+.link-card {
+  display: flex;
+  width: 93px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3px;
+  text-decoration: none;
+  color: #25527d;
+}
+
+.link-card .icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 53px;
+  color: #303944;
+}
+
+.link-card .icon svg { width: 37px; height: 37px; }
+
+.link-card .icon img { width: 42px; height: 42px; object-fit: contain; }
+
+.link-card:hover .link-title { text-decoration: underline; }
+
+.link-title { font-size: 14px; }
+
+.link-subtitle { font-size: 11px; color: #666; line-height: 1.2; }
+
+.link-card.disabled { color: #888; cursor: default; }
+
+.link-card.disabled .icon { color: #888; }
+
+main { padding: 0 28px 50px; }
+
+.content-section { margin-top: 42px; }
+
+.content-section:first-child { margin-top: 6px; }
+
+.section-kicker { display: none; }
+
+.section-heading h2 {
+  font-size: 21px;
+  margin: 0 0 18px;
+  line-height: 1.2;
+}
+
+.teaser-figure { margin: 0 auto 22px; }
+
+.teaser-figure img { width: 100%; }
+
+.text-card { text-align: left; }
+
+.text-card p:last-child { margin-bottom: 0; }
+
+.video-frame {
+  max-width: 750px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  background: #111;
+}
+
+.video-frame video { display: block; width: 100%; height: 100%; }
+
+.feature-grid { display: grid; gap: 24px; }
+
+.feature-grid.single { grid-template-columns: minmax(0, 1fr); }
+
+#analysis .feature-grid.two-up { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+#analysis .feature-card img { width: 100%; }
+
+.feature-card { min-width: 0; }
+
+.feature-card img { max-width: 100%; margin: 0 auto; }
+
+.feature-copy { padding: 9px 0 0; }
+
+.feature-copy h3 {
+  font-size: 16px;
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+
+.feature-copy p { margin: 0; }
+
+.result-block { margin-top: 24px; }
+
+.result-block + .result-block { margin-top: 45px; }
+
+.result-intro h3 { font-size: 18px; margin: 0 0 9px; }
+
+.result-intro p { margin-bottom: 14px; }
+
+.table-card { margin: 15px 0 22px; }
+
+.table-card h4 { font-size: 15px; margin: 0 0 8px; }
+
+.table-wrap { max-width: 100%; overflow-x: auto; }
+
+.table-card table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.table-card th, .table-card td {
+  text-align: right;
+  padding: 6px 7px;
+  border-bottom: 1px solid #dadada;
+  white-space: nowrap;
+}
+
+.table-card th:first-child, .table-card td:first-child { text-align: left; }
+
+.table-card thead { border-top: 2px solid #444; border-bottom: 1px solid #444; }
+
+.table-card tbody tr:last-child { border-bottom: 2px solid #444; }
+
+.table-card tbody tr.highlight { font-weight: 700; }
+
+.results-visuals { margin-top: 22px; }
+
+.citation-card { min-height: 25px; }
+
+@media (max-width: 600px) {
+  .hero { padding: 20px 17px 23px; }
+  .hero h1 { font-size: 25px; }
+  .authors { gap: 2px 9px; font-size: 14px; }
+  .affiliations { font-size: 13px; }
+  .link-grid { gap: 10px; padding: 23px 8px 15px; }
+  .link-card { width: 72px; }
+  main { padding: 0 17px 40px; }
+  .content-section { margin-top: 35px; }
+  #analysis .feature-grid.two-up { grid-template-columns: minmax(0, 1fr); }
+  .table-card table { min-width: 720px; }
+}
