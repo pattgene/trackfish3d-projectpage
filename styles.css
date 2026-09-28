@@ -131,9 +131,30 @@ main { padding: 0 28px 50px; }
   margin: 0 auto;
   aspect-ratio: 16 / 9;
   background: #111;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.video-frame video { display: block; width: 100%; height: 100%; }
+.video-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-note {
+  margin: 10px auto 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.video-note a {
+  text-decoration: none;
+}
+
+.video-note a:hover {
+  text-decoration: underline;
+}
 
 .feature-grid { display: grid; gap: 24px; }
 
@@ -195,8 +216,6 @@ main { padding: 0 28px 50px; }
 .table-card tbody tr.highlight { font-weight: 700; }
 
 .results-visuals { margin-top: 22px; }
-
-.citation-card { min-height: 25px; }
 
 @media (max-width: 600px) {
   .hero { padding: 20px 17px 23px; }
