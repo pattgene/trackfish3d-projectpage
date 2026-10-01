@@ -50,6 +50,15 @@ a:hover { color: #153452; }
   line-height: 1.55;
 }
 
+.authors a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.authors a:hover {
+  text-decoration: underline;
+}
+
 sup { font-size: 0.69em; vertical-align: super; }
 
 .affiliations { font-size: 15px; line-height: 1.35; }
@@ -125,6 +134,23 @@ main { padding: 0 28px 50px; }
 .text-card { text-align: left; }
 
 .text-card p:last-child { margin-bottom: 0; }
+
+.citation-card {
+  background: #f7f8fa;
+  border: 1px solid #d9dde3;
+  border-radius: 10px;
+  padding: 16px 18px;
+  overflow-x: auto;
+}
+
+.citation-card pre {
+  margin: 0;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 13px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
 
 .video-frame {
   width: min(100%, 750px);
